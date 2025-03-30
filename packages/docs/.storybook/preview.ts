@@ -1,3 +1,5 @@
+import '../public/fonts.css'
+
 import type { Preview } from '@storybook/react'
 import { ensure, themes } from '@storybook/theming'
 
