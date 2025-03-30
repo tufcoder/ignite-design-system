@@ -1,24 +1,27 @@
-import { defineConfig } from 'eslint/config'
-import globals from 'globals'
 import js from '@eslint/js'
+import globals from 'globals'
 import tseslint from 'typescript-eslint'
-import pluginReact from 'eslint-plugin-react'
 import prettier from 'eslint-plugin-prettier'
-import configPrettier from 'eslint-config-prettier'
+import prettierConfig from 'eslint-config-prettier'
+import simpleImportSort from 'eslint-plugin-simple-import-sort'
 
-export default defineConfig([
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
+export default tseslint.config(
+  { ignores: ['dist'] },
   {
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    languageOptions: { globals: globals.browser },
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    files: ['**/*.{ts,tsx}'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+    plugins: {
+      prettier,
+      'simple-import-sort': simpleImportSort,
+    },
+    rules: {
+      'prettier/prettier': ['error'],
+      'simple-import-sort/imports': 'error',
+    },
   },
-  {
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    plugins: { js, prettier },
-    extends: ['js/recommended', configPrettier],
-    settings: { react: { version: 'detect' } },
-    rules: { 'prettier/prettier': ['error'] },
-  },
-  tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
-])
+  prettierConfig,
+)
