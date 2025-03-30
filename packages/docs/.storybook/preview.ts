@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react'
+import { ensure, themes } from '@storybook/theming'
 
 const preview: Preview = {
   parameters: {
@@ -7,6 +8,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    docs: {
+      theme: ensure(themes.dark),
     },
   },
 }
