@@ -17,6 +17,6 @@ export const Primary: Story = {}
 
 export const WithFallback: Story = {
   args: {
-    src: undefined,
+    src: '#',
   },
 }
