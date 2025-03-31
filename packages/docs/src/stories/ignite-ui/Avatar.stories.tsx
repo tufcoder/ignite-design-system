@@ -1,5 +1,5 @@
-import { Avatar, AvatarProps } from '@ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { Avatar, AvatarProps } from '@tufcoder-ignite-ui/react'
 
 export default {
   title: 'Ignite-UI/Data Display/Avatar',

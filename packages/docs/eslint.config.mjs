@@ -1,3 +1,3 @@
-import eslintConfig from "@ignite-ui/eslint-config";
+import eslintConfig from "@tufcoder-ignite-ui/eslint-config";
 
 export default eslintConfig;

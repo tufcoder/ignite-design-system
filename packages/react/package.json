@@ -1,21 +1,20 @@
 {
-  "name": "@ignite-ui/react",
-  "version": "1.0.0",
+  "name": "@tufcoder-ignite-ui/react",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --watch",
-    "lint": "eslint src/**/*.ts*",
-    "lint:fix": "eslint src/**/*.ts* --fix",
+    "lint": "eslint src/**/*.ts* --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@tufcoder-ignite-ui/eslint-config": "*",
+    "@tufcoder-ignite-ui/tokens": "*",
+    "@tufcoder-ignite-ui/ts-config": "*",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "react": "^19.1.0",

@@ -1,5 +1,5 @@
-import { Box, Text, TextInput, TextInputProps } from '@ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { Box, Text, TextInput, TextInputProps } from '@tufcoder-ignite-ui/react'
 
 export default {
   title: 'Ignite-UI/Form/Text Input',

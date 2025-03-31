@@ -1,7 +1,7 @@
-import { Button, ButtonProps } from '@ignite-ui/react'
 import { ArrowRight } from '@phosphor-icons/react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
+import { Button, ButtonProps } from '@tufcoder-ignite-ui/react'
 
 export default {
   title: 'Ignite-UI/Form/Button',
