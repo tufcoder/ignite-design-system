@@ -1,4 +1,5 @@
 import { Button, ButtonProps } from '@ignite-ui/react'
+import { ArrowRight } from '@phosphor-icons/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
@@ -6,7 +7,7 @@ export default {
   component: Button,
   tags: ['autodocs'],
   args: {
-    children: 'Enviar',
+    children: 'Send',
   },
 } satisfies Meta<typeof Button>
 
@@ -14,8 +15,39 @@ type Story = StoryObj<ButtonProps>
 
 export const Primary: Story = {}
 
-export const Big: Story = {
+export const Secondary: Story = {
   args: {
-    size: 'big',
+    variant: 'secondary',
+    children: 'Create new',
+  },
+}
+
+export const Tertiary: Story = {
+  args: {
+    variant: 'tertiary',
+    children: 'Cancel',
+  },
+}
+
+export const Small: Story = {
+  args: {
+    size: 'sm',
+  },
+}
+
+export const WithIcon: Story = {
+  args: {
+    children: (
+      <>
+        Próximo passo
+        <ArrowRight weight="bold" />
+      </>
+    ),
+  },
+}
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
   },
 }
