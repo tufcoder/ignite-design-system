@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 
 import { styled } from '../../styles'
 
-export const AvatarContainer = styled(Avatar, {
+export const Avatar_Root = styled(Avatar, {
   display: 'inline-block',
   width: '$12',
   height: '$12',
@@ -10,14 +10,14 @@ export const AvatarContainer = styled(Avatar, {
   overflow: 'hidden',
 })
 
-export const AvatarContainerImage = styled(AvatarImage, {
+export const Avatar_Image = styled(AvatarImage, {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
   borderRadius: 'inherit',
 })
 
-export const AvatarContainerFallback = styled(AvatarFallback, {
+export const Avatar_Fallback = styled(AvatarFallback, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

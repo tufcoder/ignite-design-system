@@ -11,7 +11,11 @@ export default {
       return (
         <Box
           as="label"
-          css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
+          css={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '$2',
+          }}
         >
           {StoryObject()}
           <Text size="sm">Accept terms of use</Text>
