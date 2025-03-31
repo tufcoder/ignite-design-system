@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
+    "deploy-storybook": "storybook-to-ghpages",
     "dev": "storybook dev -p 6006",
     "build": "storybook build"
   },
@@ -31,6 +32,7 @@
     "@storybook/experimental-addon-test": "^8.6.11",
     "@storybook/react": "^8.6.11",
     "@storybook/react-vite": "^8.6.11",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^8.6.11",
     "@types/node": "^22.13.14",
     "@types/react": "^19.0.10",
