@@ -2,7 +2,7 @@ import { Box, BoxProps, Text } from '@ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: 'Ignite-UI/Form/Box',
+  title: 'Ignite-UI/Surfaces/Box',
   component: Box,
   tags: ['autodocs'],
   args: {

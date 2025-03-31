@@ -2,7 +2,7 @@ import { Text, TextProps } from '@ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: 'Ignite-UI/Form/Text',
+  title: 'Ignite-UI/Typograph/Text',
   component: Text,
   tags: ['autodocs'],
   args: {
