@@ -1,6 +1,7 @@
 import { Button, ButtonProps } from '@ignite-ui/react'
 import { ArrowRight } from '@phosphor-icons/react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { fn } from '@storybook/test'
 
 export default {
   title: 'Ignite-UI/Form/Button',
@@ -8,6 +9,7 @@ export default {
   tags: ['autodocs'],
   args: {
     children: 'Send',
+    onClick: fn(),
   },
 } satisfies Meta<typeof Button>
 
