@@ -9,7 +9,7 @@
     "lint": "turbo run lint --parallel",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build && changeset publish --ignore=@tufcoder-ignite-ui/docs"
+    "release": "turbo run build --filter=!docs && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
