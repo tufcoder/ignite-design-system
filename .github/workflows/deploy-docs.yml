@@ -27,7 +27,7 @@ jobs:
       - name: Build with Turbo
         run: npm run build
         env:
-          TURBO_TOKEN: Coiy1E9JW9JysYfPmP9DVny1
+          TURBO_TOKEN: XdMUR5dGFPnLp91CHz6LMsi3
           TURBO_TEAM: tufzeira
 
       - name: Deploy to GitHub Pages
