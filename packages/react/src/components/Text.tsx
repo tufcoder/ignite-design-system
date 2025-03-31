@@ -5,7 +5,7 @@ import { styled } from '../styles'
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface TextProps extends ComponentProps<typeof Text> {}
 
-export const Text = styled('div', {
+export const Text = styled('p', {
   margin: 0,
   fontFamily: '$default',
   lineHeight: '$base',
