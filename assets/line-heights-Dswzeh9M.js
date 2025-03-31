@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-3lSaTjIr.js";import{M as s}from"./index-BO6AHP1L.js";import{l as r}from"./index-m0NveNkc.js";import{T as m}from"./TokensGrid-D8RQfoXz.js";import"./index-CgfFrydU.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-C34J-mVf.js";import"./index-C5IbEVfT.js";import"./index-sY8i7rw0.js";import"./index-B2KKL2uI.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function e(n){const o={h1:"h1",p:"p",...i(),...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(s,{title:"Ignite-UI/Tokens/Line Heights"}),`
+`,t.jsx(o.h1,{id:"line-heights",children:"Line Heights"}),`
+`,t.jsx(o.p,{children:"Essas são as cores utilizadas no Ignite UI."}),`
+`,t.jsx(m,{tokens:r})]})}function k(n={}){const{wrapper:o}={...i(),...n.components};return o?t.jsx(o,{...n,children:t.jsx(e,{...n})}):e(n)}export{k as default};
