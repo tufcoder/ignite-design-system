@@ -1,6 +1,0 @@
-import{j as m}from"./jsx-runtime-D_zvdyIk.js";import{T as c}from"./index-hGPsA9mn.js";import"./index-CgfFrydU.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-sY8i7rw0.js";import"./index-B2KKL2uI.js";const T={title:"Ignite-UI/Typograph/Text",component:c,tags:["autodocs"],args:{children:m.jsx("span",{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam architecto suscipit recusandae cumque tenetur deserunt aperiam fugit magnam! Debitis inventore sed ex maxime repudiandae corporis veritatis adipisci, assumenda non?"}),size:"md"},argTypes:{size:{options:["xxs","xs","sm","md","lg","xl","2xl","4xl","5xl","6xl","7xl","8xl","9xl"],control:{type:"inline-radio"}}}},e={},r={args:{children:"Texto em negrito",as:"strong"}};var s,t,o;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:"{}",...(o=(t=e.parameters)==null?void 0:t.docs)==null?void 0:o.source}}};var a,i,n;r.parameters={...r.parameters,docs:{...(a=r.parameters)==null?void 0:a.docs,source:{originalSource:`{
-  args: {
-    children: 'Texto em negrito',
-    as: 'strong'
-  }
-}`,...(n=(i=r.parameters)==null?void 0:i.docs)==null?void 0:n.source}}};const h=["Primary","CustomTag"];export{r as CustomTag,e as Primary,h as __namedExportsOrder,T as default};
