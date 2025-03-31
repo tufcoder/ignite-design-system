@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:vite": "vite",
+    "build:vite": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "dev:sb": "storybook dev -p 6006",
-    "sb:build": "storybook build"
+    "build": "storybook build"
   },
   "dependencies": {
     "@ignite-ui/eslint-config": "*",
