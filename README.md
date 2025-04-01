@@ -9,3 +9,8 @@
 * [x] Checkbox: Customizado para evitar o uso do elemento nativo do HTML
 * [x] Avatar: image, border
 * [x] MultiStep: Formulário de múltiplas etapas
+
+```sh
+npm run changeset
+npm run version-packages
+```
