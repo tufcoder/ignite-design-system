@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/tokens
 
+## 1.1.1
+
+### Patch Changes
+
+- Remove teste color and add colors pink and red 500
+
 ## 1.1.0
 
 ### Minor Changes
