@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/react
 
+## 2.0.4
+
+### Patch Changes
+
+- Add README.md and fix prop size in TextInput component
+
 ## 2.0.3
 
 ### Patch Changes

@@ -5,20 +5,36 @@ export default {
   title: 'Ignite-UI/Form/Text Input',
   component: TextInput,
   tags: ['autodocs'],
-  args: {},
+  args: {
+    size: 'md',
+    disabled: false,
+  },
   decorators: [
-    StoryObject => {
+    Story => {
       return (
         <Box
           as="label"
           css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
         >
           <Text size="sm">Email address</Text>
-          {StoryObject()}
+          <Story />
         </Box>
       )
     },
   ],
+  argTypes: {
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
 } satisfies Meta<typeof TextInput>
 
 type Story = StoryObj<TextInputProps>
