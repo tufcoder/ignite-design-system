@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/react
 
+## 2.0.5
+
+### Patch Changes
+
+- Update colors in tokens package
+
 ## 2.0.4
 
 ### Patch Changes
