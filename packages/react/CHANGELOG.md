@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/react
 
+## 2.0.6
+
+### Patch Changes
+
+- Update scripts paths and minor package.json changes
+
 ## 2.0.5
 
 ### Patch Changes

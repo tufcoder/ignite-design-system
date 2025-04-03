@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/tokens
 
+## 1.1.2
+
+### Patch Changes
+
+- Update scripts paths and minor package.json changes
+
 ## 1.1.1
 
 ### Patch Changes
