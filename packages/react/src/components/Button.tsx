@@ -1,6 +1,8 @@
+import { ComponentProps, FC, PropsWithChildren } from 'react'
+
 import { styled } from '../styles'
 
-const StyledButton = styled('button', {
+const ButtonStyled = styled('button', {
   all: 'unset',
   boxSizing: 'border-box',
   display: 'flex',
@@ -88,17 +90,22 @@ const StyledButton = styled('button', {
   },
 })
 
-export interface ButtonProps extends React.ComponentProps<'button'> {
+export interface ButtonProps extends ComponentProps<'button'> {
   children: React.ReactNode
   size?: 'sm' | 'md'
   variant?: 'primary' | 'secondary' | 'tertiary'
 }
 
-export function Button({ children, disabled, size, variant }: ButtonProps) {
+export const Button: FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  size,
+  variant,
+  ...props
+}) => {
   return (
-    <StyledButton disabled={disabled} size={size} variant={variant}>
+    <ButtonStyled size={size} variant={variant} {...props}>
       {children}
-    </StyledButton>
+    </ButtonStyled>
   )
 }
 

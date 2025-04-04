@@ -1,6 +1,6 @@
 import { ArrowRight } from '@phosphor-icons/react'
+import { action } from '@storybook/addon-actions'
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
 import { Button, ButtonProps } from '@tufcoder-ignite-ui/react'
 
 export default {
@@ -9,7 +9,7 @@ export default {
   tags: ['autodocs'],
   args: {
     children: 'Send',
-    onClick: fn(),
+    onClick: action('clicked'),
     variant: 'primary',
     size: 'md',
     disabled: false,
