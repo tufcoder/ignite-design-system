@@ -1,10 +1,13 @@
 {
   "name": "@tufcoder-ignite-ui/react",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react react-dom",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react react-dom --watch",

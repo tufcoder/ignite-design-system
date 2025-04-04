@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/react
 
+## 2.0.7
+
+### Patch Changes
+
+- Refactor Button component and add "files" in package.json
+
 ## 2.0.6
 
 ### Patch Changes

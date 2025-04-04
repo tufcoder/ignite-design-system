@@ -1,11 +1,6 @@
-import { ComponentProps } from 'react'
-
 import { styled } from '../styles'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface ButtonProps extends ComponentProps<typeof Button> {}
-
-export const Button = styled('button', {
+const StyledButton = styled('button', {
   all: 'unset',
   boxSizing: 'border-box',
   display: 'flex',
@@ -92,5 +87,19 @@ export const Button = styled('button', {
     size: 'md',
   },
 })
+
+export interface ButtonProps extends React.ComponentProps<'button'> {
+  children: React.ReactNode
+  size?: 'sm' | 'md'
+  variant?: 'primary' | 'secondary' | 'tertiary'
+}
+
+export function Button({ children, disabled, size, variant }: ButtonProps) {
+  return (
+    <StyledButton disabled={disabled} size={size} variant={variant}>
+      {children}
+    </StyledButton>
+  )
+}
 
 Button.displayName = 'Button'

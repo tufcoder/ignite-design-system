@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/tokens
 
+## 1.1.3
+
+### Patch Changes
+
+- Refactor Button component and add "files" in package.json
+
 ## 1.1.2
 
 ### Patch Changes
