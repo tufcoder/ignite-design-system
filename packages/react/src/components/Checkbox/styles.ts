@@ -1,9 +1,9 @@
-import { Checkbox, CheckboxIndicator } from '@radix-ui/react-checkbox'
+import * as Checkbox from '@radix-ui/react-checkbox'
 import { keyframes } from '@stitches/react'
 
 import { styled } from '../../styles'
 
-export const Checkbox_Root = styled(Checkbox, {
+export const CheckboxRoot = styled(Checkbox.Root, {
   all: 'unset',
   boxSizing: 'border-box',
   display: 'flex',
@@ -45,7 +45,7 @@ const slideOut = keyframes({
   },
 })
 
-export const Checkbox_Indicator = styled(CheckboxIndicator, {
+export const CheckboxIndicator = styled(Checkbox.Indicator, {
   width: '$4',
   height: '$4',
   color: '$white',

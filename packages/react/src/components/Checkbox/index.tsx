@@ -1,18 +1,29 @@
 import { Check } from '@phosphor-icons/react'
-import { ComponentProps } from 'react'
+import { ComponentProps, FC } from 'react'
 
-import { Checkbox_Indicator, Checkbox_Root } from './styles'
+import { CheckboxIndicator, CheckboxRoot } from './styles'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface CheckboxProps extends ComponentProps<typeof Checkbox_Root> {}
+export interface CheckboxProps extends ComponentProps<typeof CheckboxRoot> {
+  checked?: boolean | 'indeterminate'
+  onCheckedChange?: (checked: boolean | 'indeterminate') => void
+}
 
-export function Checkbox(props: CheckboxProps) {
+export const Checkbox: FC<CheckboxProps> = ({
+  checked,
+  onCheckedChange,
+  ...props
+}) => {
   return (
-    <Checkbox_Root {...props}>
-      <Checkbox_Indicator asChild>
+    <CheckboxRoot
+      checked={checked}
+      defaultChecked={props.defaultChecked || false}
+      onCheckedChange={onCheckedChange}
+      {...props}
+    >
+      <CheckboxIndicator asChild>
         <Check weight="bold" />
-      </Checkbox_Indicator>
-    </Checkbox_Root>
+      </CheckboxIndicator>
+    </CheckboxRoot>
   )
 }
 

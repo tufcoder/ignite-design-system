@@ -5,9 +5,11 @@ export default {
   title: 'Ignite-UI/Form/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
-  args: {},
+  args: {
+    checked: false,
+  },
   decorators: [
-    StoryObject => {
+    Story => {
       return (
         <Box
           as="label"
@@ -17,7 +19,7 @@ export default {
             gap: '$2',
           }}
         >
-          {StoryObject()}
+          <Story />
           <Text size="sm">Accept terms of use</Text>
         </Box>
       )

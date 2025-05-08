@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/react
 
+## 2.0.9
+
+### Patch Changes
+
+- Update props on Checkbox component to expose checked and onCheckedChange
+
 ## 2.0.8
 
 ### Patch Changes
