@@ -1,19 +1,21 @@
 import { User } from '@phosphor-icons/react'
 import { ComponentProps } from 'react'
 
-import { Avatar_Fallback, Avatar_Image, Avatar_Root } from './styles'
+import { AvatarFallback, AvatarImage, AvatarRoot } from './styles'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface AvatarProps extends ComponentProps<typeof Avatar_Image> {}
+export interface AvatarProps extends ComponentProps<typeof AvatarImage> {
+  src?: string
+  alt?: string
+}
 
-export function Avatar(props: AvatarProps) {
+export function Avatar({ src, alt, ...props }: AvatarProps) {
   return (
-    <Avatar_Root>
-      <Avatar_Image {...props} />
-      <Avatar_Fallback delayMs={600}>
+    <AvatarRoot>
+      <AvatarImage src={src} alt={alt} {...props} />
+      <AvatarFallback delayMs={600}>
         <User />
-      </Avatar_Fallback>
-    </Avatar_Root>
+      </AvatarFallback>
+    </AvatarRoot>
   )
 }
 

@@ -14,9 +14,3 @@ export default {
 type Story = StoryObj<AvatarProps>
 
 export const Primary: Story = {}
-
-export const WithFallback: Story = {
-  args: {
-    src: '#',
-  },
-}

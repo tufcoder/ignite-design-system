@@ -1,5 +1,11 @@
 # @tufcoder-ignite-ui/react
 
+## 2.0.10
+
+### Patch Changes
+
+- Update Avatar to expose src and alt props
+
 ## 2.0.9
 
 ### Patch Changes
